@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>今日のストーリー</title>
+  <style>
+    :root{--navy:#24377C;--yellow:#FCCC00}*{box-sizing:border-box}body{margin:0;background:#fff;color:#172044;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;font-size:18px;line-height:1.65}main{max-width:680px;margin:auto;padding:20px 16px 44px}h1{font-size:26px;line-height:1.35;color:var(--navy);margin:4px 0 18px}.steps{border-left:6px solid var(--yellow);padding:10px 16px;margin:0 0 18px;background:#fffbe8}.steps p{margin:4px 0}.warning{margin:0 0 18px;padding:12px 14px;border:2px solid #b42318;background:#fff0ef;color:#9d1611;font-weight:700}.card{border:2px solid var(--navy);border-radius:12px;overflow:hidden;margin:22px 0;background:white}.card h2,.card p{margin:14px 16px}.card h2{font-size:22px;color:var(--navy)}.story-image{display:block;width:100%;height:auto;background:#eee}.actions{padding:0 16px 16px}.copy{width:100%;min-height:56px;border:0;border-radius:8px;background:var(--navy);color:#fff;font-family:inherit;font-size:18px;font-weight:700;line-height:1.5;margin-top:10px;padding:10px 14px;cursor:pointer}.copy:focus-visible{outline:4px solid var(--yellow);outline-offset:2px}.copy:disabled{background:#888;cursor:not-allowed}.stamp{font-size:18px;margin:12px 0 0}.note{font-size:18px;font-weight:700;margin-top:28px}.manual{display:none;width:100%;min-height:64px;font-size:18px;margin-top:10px;padding:8px;border:2px solid var(--navy)}#status{min-height:1.7em;font-weight:700;color:var(--navy);margin:12px 0}
+  </style>
+</head>
+<body><main>
+  <h1>10月3日（土）のストーリー</h1>
+  <section class="steps" aria-label="投稿の手順"><p>① 画像を長押しして「写真に保存」</p><p>② Instagramでストーリーを作り「リンク」スタンプ</p><p>③ 下のボタンでURLをコピーして貼る</p></section>
+  
+  <div id="status" aria-live="polite"></div><textarea id="manual-copy" class="manual" readonly aria-label="手動でコピーするURL"></textarea>
+  <section class="card" aria-labelledby="news-title"><img class="story-image" src="ikumou/daily/2026-10-03_1.jpg?v=2026-10-03" alt="1枚目のニュース画像"><h2 id="news-title">秋に抜け毛が増えた？今すぐ見直したい3つのヘアケア</h2><p>出典：TRILL【トリル】</p><div class="actions"><button class="copy" data-copy="https://trilltrill.jp/articles/5054361" >記事URLをコピー</button><p class="stamp">スタンプ文字の推奨：元の記事を読む</p><button class="copy" data-copy="元の記事を読む">「元の記事を読む」をコピー</button></div></section>
+  <section class="card" aria-labelledby="cta-title"><img class="story-image" src="ikumou/daily/2026-10-03_2.jpg?v=2026-10-03" alt="2枚目の無料頭皮診断画像"><h2 id="cta-title">無料頭皮診断</h2><div class="actions"><button class="copy" data-copy="https://s.lmes.jp/landing-qr/2008142144-KnkY9Fnz?uLand=Xe9gRb">診断URLをコピー</button><p class="stamp">スタンプ文字：無料頭皮診断はこちら</p><button class="copy" data-copy="無料頭皮診断はこちら">「無料頭皮診断はこちら」をコピー</button></div></section>
+  <section class="card"><div class="actions"><button class="copy" data-copy="https://beauty.hotpepper.jp/kr/slnH000646749/">予約URLをコピー</button></div></section>
+  <p class="note">リンクスタンプは画像の下の空いている所へ</p>
+</main><script>
+(()=>{const status=document.getElementById('status'),manual=document.getElementById('manual-copy');function label(button,text){const original=button.dataset.label||button.textContent;button.dataset.label=original;button.textContent=text;setTimeout(()=>button.textContent=original,2500)}function fallback(value,button){manual.value=value;manual.style.display='block';manual.scrollIntoView({behavior:'smooth',block:'center'});manual.focus();manual.select();manual.setSelectionRange(0,value.length);label(button,'手動でコピーしてください');status.textContent='コピーできませんでした。表示された文字を長押ししてコピーしてください。'}async function copy(value,button){try{if(!navigator.clipboard||!navigator.clipboard.writeText)throw Error('clipboard unavailable');await navigator.clipboard.writeText(value);manual.style.display='none';label(button,'コピーしました');status.textContent='コピーしました。Instagramのリンクスタンプに貼ってください。'}catch(e){fallback(value,button)}}document.querySelectorAll('.copy:not([disabled])').forEach(button=>button.addEventListener('click',()=>copy(button.dataset.copy,button)));})();
+</script></body></html>
